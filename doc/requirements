@@ -1,0 +1,21 @@
+Requirements:
+
+GUI
+
+
+AUTO     Manual  |         CURRENT STATUS: Manual    IP SCAN ...
+                 |
+Machine IP SCAN  | ID  Selection    IP                  PORT     SN            Status
+                 |
+Add To HMC       |
+                 |
+Install VIOS     |
+                 |
+HMC To IVM       |
+                 |
+Register PD      | Log:
+                 |    SND CMD: Hello
+Show Records     |    RCV MSG: How are you
+
+
+

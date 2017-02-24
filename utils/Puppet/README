@@ -1,0 +1,10 @@
+Install:
+
+  1. install python 2.7 
+  2. install paramiko module
+  3. download the source code
+
+Usage:
+python client.py -i -2 target_ip passwrod version_number
+
+The default directory where the PD package stores is in Software_Install.cfg.

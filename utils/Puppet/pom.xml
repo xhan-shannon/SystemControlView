@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>pd2.teamsun.com</groupId>
+    <artifactId>pd2-webautomation</artifactId>
+    <version>1.0.1</version>
+    <packaging>pom</packaging>
+
+    <name>pd2-web-automation-test</name>
+
+    
+    <build>
+        <defaultGoal>test</defaultGoal>
+        <plugins>
+            <plugin>
+                <groupId>org.kuali.maven.plugins</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.1</version>
+                <executions>
+                    <execution>
+                        <inherited>false</inherited>
+                        <configuration>
+                            <executable>python</executable>
+                            <arguments>
+                                <argument>client.py</argument>
+                                <argument>-i</argument>
+                                <argument>-${product_type}</argument>
+                                <ip>${target_ip}</ip>
+                                <password>${password}</password>
+                                <version>${version}</version>
+                            </arguments>
+                            <tasks>
+                                <echo>This is python script execution for PD package deployment.</echo>
+                            </tasks>
+                        </configuration>
+                        <id>launch_pd2_deploy_test</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

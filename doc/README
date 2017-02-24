@@ -1,0 +1,22 @@
+1. How to get latest code?
+	1.1.随意创建一个自己的目录
+	1.2.cd到此目录
+	1.3.第1次执行：git clone git@172.24.23.246:vdt/vdt.git
+	1.4.以后更新，先cd 目录/vdt，再执行：git pull origin develop
+
+
+2. How to add message handler in VD?
+	2.1 In controlButtons, add command handler
+	define_nim_host_btn.config(command=lambda idx=DEFINESERVER_STAT: self.launch_state_task(idx))
+	
+	2.2  CHECKDEFINEDSERVER in cmdmsg
+	
+	2.3  SvrController, StarTEng
+	
+	2.4 Engine processMsg
+	
+3. update_password
+   3.1 add in progress messsage in update_password function
+
+
+

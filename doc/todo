@@ -1,0 +1,35 @@
+To Do List:
+
+1. Implement class destruction to destroy the classes in safety.
+2. Register the command msg
+3. Define the command format
+4. Implement the fake engine class
+5. debug the real engine class, such as hmc, NIM server, switch and etc.
+
+
+2015-05-14
+
+1. How to update Status for Server?
+   Use lssyscfg -F state
+   
+   Poweroff
+   Operating
+   Initializing
+   Pending Authentication Password Required    -- updatepassword
+   Recover                                     -- recover
+   Standby                                     -- installvios
+   
+   
+2. python tkinter out of stack space (infinite loop?)
+
+3. rstprofdata -m Server-8246-L1T-SN060A17A -l 4
+
+4. lssyscfg -r sys -F name,state
+
+5. hmc2ivm
+
+6. remove server from hmc
+
+10. Simulate the states: Power Off, Operating, Standby
+11. 
+

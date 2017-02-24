@@ -1,0 +1,16 @@
+1. Firefox Can't load the profile, pip install -U selenium
+
+2. Recovery status needs to be handled
+
+3. Could not find the server when it was removed from hmc and reset the connection
+
+
+AA06000C : 进入固件提示符
+
+4. 将Server关机，在VD环境中可以进行安装系统
+5. 由于Server Scan在其中一台主机移除后，不再工作，所以要求批量安装系统，结束后关闭程序。
+        再次开启进行下一轮的系统安装。
+      
+Server Scan的测试：
+1. 打开VD应用程序，扫描主机，查看扫描结果
+2. 打开VD应用程序，扫描主机，主机发现后，在HMC中移除后，观察扫描结果
